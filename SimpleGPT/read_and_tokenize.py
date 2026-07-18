@@ -49,8 +49,13 @@ class TrainAndValidation (SampleEncoderAndDecoder):
         train_data=self.text[:split]
         test_data=self.text[split:]
         return train_data, test_data
-
-
+    
+class SetParameters(TrainAndValidation):
+    def __init__(self, text, split_percentage):
+        super().__init__(text, split_percentage)
+    
+    def set_block_size(block_size=8):
+        print
 
         
 
