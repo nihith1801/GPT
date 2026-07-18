@@ -55,7 +55,7 @@ class SetParameters(TrainAndValidation):
         super().__init__(text, split_percentage)
     
     def set_block_size(block_size=8):
-        print
+        pass
 
         
 
